@@ -1,0 +1,21 @@
+{
+  "name": "01_maximumpairwiseproduct",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --port 8080  --bail --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kumudu.gunasekara",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "core-js": "^2.5.1"
+  }
+}
