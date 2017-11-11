@@ -23,6 +23,7 @@ export class MaxPairwiseProduct {
         return result;
     }
 
+    //Complexity 2 * N 
     getMaxPairwiseProductV2(input: number[]): Result {
         var result = new Result();
         result.pairwiseProduct = 0;
