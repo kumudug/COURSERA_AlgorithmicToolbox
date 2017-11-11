@@ -6,19 +6,28 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'app/**/*.spec.ts'
+      {
+        pattern: './config/karma-test.shim.js',
+        watched: false
+      }
     ],
     exclude: [
     ],
     preprocessors: {
-      'app/**/*.spec.ts': ['webpack', 'sourcemap']
+      './config/karma-test.shim.js': ['webpack', 'sourcemap']
     },
     webpack: webpackConfig,
+    webpackMiddleware: {
+      stats: 'errors-only'
+    },
+    webpackServer: {
+      noInfo: true
+    },
     reporters: ['spec'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    autoWatch: true,
+    autoWatch: false,
     //browsers: ['Chrome'],
     browsers: ['PhantomJS'],
     singleRun: true,
