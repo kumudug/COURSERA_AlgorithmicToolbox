@@ -24,12 +24,13 @@ module.exports = function(config) {
       noInfo: true
     },
     reporters: ['spec'],
+    //reporters: ['dots'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,
-    //browsers: ['Chrome'],
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
+    //browsers: ['PhantomJS'],
     singleRun: true,
     concurrency: Infinity,
     plugins: [
