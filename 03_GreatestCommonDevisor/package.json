@@ -1,0 +1,32 @@
+{
+  "name": "02_fibonacci_numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --progress --port 8080  --bail --watch",
+    "test": "karma start karma.webpack.config.js"
+  },
+  "author": "kumudu.gunasekara",
+  "license": "",
+  "devDependencies": {
+    "@types/jasmine": "^2.6.3",
+    "@types/node": "^8.0.51",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-spec-reporter": "0.0.31",
+    "karma-webpack": "^2.0.6",
+    "phantomjs-prebuilt": "^2.1.16",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "core-js": "^2.5.1"
+  }
+}
